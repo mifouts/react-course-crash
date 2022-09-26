@@ -13,4 +13,4 @@ function Modal() {
 </div>
 }
 
-export default Modal
+export default Modal;
