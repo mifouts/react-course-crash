@@ -1,11 +1,11 @@
 import './App.css';
 import Todo from './components/Todo.jsx'
-
+import Header from './components/Header.jsx';
 
 function App() {
   return (
     <div>
-      <h1>My Todo List</h1>
+      <Header></Header>
       <Todo></Todo>
       <Todo></Todo>
       <Todo></Todo>
