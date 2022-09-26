@@ -1,4 +1,4 @@
-import './Modal.css'
+import './Modal.css';
 
 function Modal() {
     <div>
