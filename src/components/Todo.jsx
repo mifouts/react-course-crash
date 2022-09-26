@@ -1,4 +1,4 @@
-function Todo () {
+function Todo() {
     return (
         <div>Todo</div>
     )
