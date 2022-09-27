@@ -22,7 +22,11 @@ function App() {
       paragraph="Apply to 100 jobs"
       />
       </div>
-      {/*<Modal /> */}
+      { <Modal 
+      paragraph="Are you sure?"
+      buttonCancel="Cancel"
+      buttonConfirm="Confirm"
+      /> }
       </>
       )
 }
