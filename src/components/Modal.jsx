@@ -1,6 +1,6 @@
 import './Modal.css';
 
-function Modal(paragraph, buttonCancel, buttonConfirm) {
+function Modal({ paragraph, buttonCancel, buttonConfirm }) {
    return ( <div>
   <div className="modal">
     <p className="modal__title">{ paragraph }</p>
