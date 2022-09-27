@@ -23,7 +23,7 @@ function App() {
       />
       </div>
       <Modal 
-      paragraph="Are you sure?"
+      paragraph="Are you sure you want to delete?"
       buttonCancel="Cancel"
       buttonConfirm="Confirm"
       />
