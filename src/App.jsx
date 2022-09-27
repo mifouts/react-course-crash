@@ -9,9 +9,9 @@ function App() {
     <>
       <Header />
       <div className="todo__wrapper">
-      <Todo />
-      <Todo />
-      <Todo />
+      <Todo title="Finish Frontend Simplified"/>
+      <Todo title="Finish Interview Section"/>
+      <Todo title="Land a 100k Job"/>
       </div>
       {/*<Modal /> */}
       </>
