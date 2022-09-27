@@ -6,15 +6,15 @@ import Modal from './components/Modal.jsx';
 
 function App() {
   return (
-    <div>
-      <Header></Header>
+    <>
+      <Header />
       <div className="todo__wrapper">
-      <Todo></Todo>
-      <Todo></Todo>
-      <Todo></Todo>
+      <Todo />
+      <Todo />
+      <Todo />
       </div>
-      <Modal />
-      </div>
+      {/*<Modal /> */}
+      </>
       )
 }
 
