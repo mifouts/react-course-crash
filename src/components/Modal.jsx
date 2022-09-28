@@ -5,8 +5,13 @@ function Modal({ paragraph, buttonCancel, buttonConfirm }) {
   <div className="modal">
     <p className="modal__title">{ paragraph }</p>
     <div className="modal__buttons">
-      <button className="btn btn__cancel">{ buttonCancel }</button>
-      <button className="btn">{ buttonConfirm }</button>
+      <button className="btn btn__cancel" onClick={() => {
+        console.log('Cancel');
+      }}>{ buttonCancel }</button>
+      <button className="btn" onClick={() => {
+        console.log('Confirm')
+      }}>
+        { buttonConfirm }</button>
     </div>
   </div>
   <div className="backdrop" />

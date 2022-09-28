@@ -25,11 +25,11 @@ function App() {
       title="Land a 100k Job"
       />
       </div>
-      {/*<Modal 
+      {<Modal 
       paragraph="Are you sure you want to delete?"
       buttonCancel="Cancel"
       buttonConfirm="Confirm"
-  />*/}
+  />}
       </>
       )
 }
