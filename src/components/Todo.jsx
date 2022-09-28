@@ -9,7 +9,7 @@ function Todo({ title, paragraph }) {
         <div className="todo">
         <h2>{ title }</h2>
         <p>{ paragraph }</p>
-        <button onClick={deleteTodo(1)}>Delete</button>
+        <button onClick={() => deleteTodo(1)}>Delete</button>
       </div>
     )
 }
