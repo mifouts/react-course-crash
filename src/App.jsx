@@ -2,15 +2,11 @@ import './App.css';
 import Todo from './components/Todo.jsx'
 import Header from './components/Header.jsx';
 import Modal from './components/Modal.jsx';
-
+import React, { useState } from 'react';
 
 function App() {
-let isModalOpen = false;
 
-function toggleModal() {
-  isModalOpen = !isModalOpen
-  console.log(isModalOpen)
-}
+  const [showModal, setShowModal] = useState(false)
 
   return (
     <>
@@ -19,7 +15,7 @@ function toggleModal() {
         <input type="text" onChange={(event) => {
           console.log(event.target.value);
         } } />
-        <button onClick={toggleModal}>Add todo</button>
+        <button onClick={() => setShowModal(true)}>Add todo</button>
       </div>
       <div className="todo__wrapper">
       <Todo 
@@ -32,7 +28,7 @@ function toggleModal() {
       title="Land a 100k Job"
       />
       </div>
-      {isModalOpen && <Modal 
+      {showModal && <Modal 
       paragraph="Confirm Delete?"
       buttonCancel="Cancel"
       buttonConfirm="Confirm"
