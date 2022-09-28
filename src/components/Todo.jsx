@@ -1,6 +1,6 @@
 import './Todo.css';
 
-function Todo({ title, }) {
+function Todo({ title }) {
 
   function deleteTodo(id) {
     console.log('deleteTodo()')
