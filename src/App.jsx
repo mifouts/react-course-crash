@@ -7,6 +7,11 @@ import Modal from './components/Modal.jsx';
 function App() {
 let isModalOpen = false;
 
+function toggleModal() {
+  isModalOpen = !isModalOpen
+  console.log(isModalOpen)
+}
+
   return (
     <>
       <Header />
@@ -14,7 +19,7 @@ let isModalOpen = false;
         <input type="text" onChange={(event) => {
           console.log(event.target.value);
         } } />
-        <button>Add todo</button>
+        <button onClick={toggleModal}>Add todo</button>
       </div>
       <div className="todo__wrapper">
       <Todo 
@@ -27,7 +32,7 @@ let isModalOpen = false;
       title="Land a 100k Job"
       />
       </div>
-      {<Modal 
+      {isModalOpen && <Modal 
       paragraph="Confirm Delete?"
       buttonCancel="Cancel"
       buttonConfirm="Confirm"
