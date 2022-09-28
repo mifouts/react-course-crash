@@ -5,6 +5,8 @@ import Modal from './components/Modal.jsx';
 
 
 function App() {
+let isModalOpen = false;
+
   return (
     <>
       <Header />
@@ -26,7 +28,7 @@ function App() {
       />
       </div>
       {<Modal 
-      paragraph="Are you sure you want to delete?"
+      paragraph="Confirm Delete?"
       buttonCancel="Cancel"
       buttonConfirm="Confirm"
   />}
