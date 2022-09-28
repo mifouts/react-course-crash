@@ -3,7 +3,7 @@ import './Todo.css';
 function Todo({ title, }) {
 
   function deleteTodo(id) {
-    console.log('deleteTodo()', id)
+    console.log('deleteTodo()')
   }
     return (
         <div className="todo">
