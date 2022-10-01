@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 
 
 function Counter() {
-    const [cart, setCart] =useState({ item: 'apple', quantity: 10 });
+    const [cart, setCart] =useState({ item: 'apple', quantity: 10, });
     const increase = () => {
         setCart(count => count + 1)
       }
