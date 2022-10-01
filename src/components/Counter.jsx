@@ -2,19 +2,19 @@ import React, {useState} from 'react';
 
 
 function Counter() {
-    const [cart, setCart] =useState({ item: 'apple', quantity: 10, });
+  const [Counter, setCounter] = useState(0)
     const increase = () => {
-        setCart(count => count + 1)
+        setCounter(count => count + 1)
       }
       const decrease = () => {
-        setCart(count => count - 1)
+        setCounter(count => count - 1)
       }
       const reset = () => {
-        setCart(0)
+        setCounter(0)
       }
     return (
         <div className="counter">
-            <span className="counter__output">{cart.quantity}</span>
+            <span className="counter__output">{Counter}</span>
             <div className="button__container">
                 <button className="control__btn" onClick={increase}>+</button>
                 <button className="control__btn" onClick={decrease}>-</button>
