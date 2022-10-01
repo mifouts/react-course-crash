@@ -55,6 +55,7 @@ function App() {
     <div>
       <button onClick={decrease}>-</button>
       {cart.quantity}
+      {cart.item}
       <button onClick={increase}>+</button>
       <button onClick={reset}>Reset</button>
     </div>
