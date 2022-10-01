@@ -28,10 +28,10 @@ function App() {
       } */
 
       function addApple() {
-        setCart(prevCart => ({...prevCart, quantity: prevCart + 1,}))
+        setCart(prevCart => ({...prevCart, quantity: 1,}))
       }
       function removeApple() {
-        setCart(prevCart => ({...prevCart, quantity: prevCart - 1,}))
+        setCart(prevCart => ({...prevCart, quantity: 1,}))
       }
       const reset = () => {
         setCart(0)
