@@ -47,7 +47,7 @@ function App() {
       }
 
       function onTodoDelete() {
-
+        setShowModal(true)
       }
   return (
     <>
