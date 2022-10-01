@@ -45,6 +45,10 @@ function App() {
       function addMinus (){
         setArr(prevArr => [...prevArr, "-"])
       }
+
+      function onTodoDelete() {
+
+      }
   return (
     <>
       <Header />
@@ -55,11 +59,11 @@ function App() {
         <button onClick={() => setShowModal(true)}>Add todo</button>
       </div>
       <div className="todo__wrapper">
-        <Todo
+        <Todo onTodoDelete={onTodoDelete}
           title="Finish Frontend Simplified" />
-        <Todo
+        <Todo onTodoDelete={onTodoDelete}
           title="Finish Interview Section" />
-        <Todo
+        <Todo onTodoDelete={onTodoDelete}
           title="Land a 100k Job" />
       </div>
       {showModal && <Modal
