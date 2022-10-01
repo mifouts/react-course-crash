@@ -48,6 +48,7 @@ function Counter() {
     <div>
       <button onClick={removeApple}>-</button>
       {cart.quantity}
+      {cart.item}
       <button onClick={addApple}>+</button>
       <button onClick={reset}>Reset</button>
     </div>
