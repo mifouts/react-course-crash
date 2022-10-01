@@ -53,6 +53,10 @@ function App() {
       function cancelModal() {
         setShowModal(false)
       }
+
+      function confirmModal() {
+        setShowModal(false)
+      }
   return (
     <>
       <Header />
@@ -70,7 +74,9 @@ function App() {
         <Todo onTodoDelete={onTodoDelete}
           title="Land a 100k Job" />
       </div>
-      {showModal && <Modal cancelModal={cancelModal}
+      {showModal && <Modal 
+        cancelModal={cancelModal}
+        confirmModal={confirmModal}
         paragraph="Confirm Delete?"
         buttonCancel="Cancel"
         buttonConfirm="Confirm" />}
