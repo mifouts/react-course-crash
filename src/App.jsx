@@ -19,7 +19,7 @@ function App() {
         setCounter(0)
       } */
 
-      const [cart, setCart] = useState({ item: 'apple', quantity: 0 });
+      //const [cart, setCart] = useState({ item: 'apple', quantity: 0 });
     /*   const increase = () => {
         setCart(count => count + 1)
       }
@@ -27,7 +27,7 @@ function App() {
         setCart(count => count - 1)
       } */
 
-      function addApple() {
+      /* function addApple() {
         setCart(prevCart => ({...prevCart, quantity: prevCart.quantity + 1,}))
       }
       function removeApple() {
@@ -35,7 +35,7 @@ function App() {
       }
       const reset = () => {
         setCart(0)
-      }
+      } */
   return (
     <>
       <Header />
@@ -59,13 +59,13 @@ function App() {
         buttonConfirm="Confirm" />}
 
 
-    <div>
+   {/*  <div>
       <button onClick={removeApple}>-</button>
       {cart.quantity}
       {cart.item}
       <button onClick={addApple}>+</button>
       <button onClick={reset}>Reset</button>
-    </div>
+    </div> */}
 
 
      {/* <div className="counter">
