@@ -14,10 +14,9 @@ function Counter() {
       }
     return (
         <div className="counter">
-            <span className="counter__output">{Counter}</span>
+            <span className="counter__output">{cart.quantity}</span>
             <div className="button__container">
                 <button className="control__btn" onClick={increase}>+</button>
-                {cart.quantity}
                 <button className="control__btn" onClick={decrease}>-</button>
                 <button className="reset" onClick={reset}>Reset</button>
             </div>
