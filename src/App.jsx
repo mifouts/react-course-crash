@@ -8,7 +8,7 @@ import React, { useState } from 'react';
 function App() {
 
   const [showModal, setShowModal] = useState(false)
-  const [Counter, setCounter] = useState(0)
+ /*  const [Counter, setCounter] = useState(0)
     const increase = () => {
         setCounter(count => count + 1)
       }
@@ -17,6 +17,17 @@ function App() {
       }
       const reset = () => {
         setCounter(0)
+      } */
+
+      const [cart, setCart] = useState({ item: 'apple', quantity: 0 });
+      const increase = () => {
+        setCart(count => count + 1)
+      }
+      const decrease = () => {
+        setCart(count => count - 1)
+      }
+      const reset = () => {
+        setCart(0)
       }
   return (
     <>
@@ -41,14 +52,22 @@ function App() {
         buttonConfirm="Confirm" />}
 
 
-     <div className="counter">
+    <div>
+      <button onClick={decrease}>-</button>
+      {cart.quantity}
+      <button onClick={increase}>+</button>
+      <button onClick={reset}>Reset</button>
+    </div>
+
+
+     {/* <div className="counter">
           <span className="counter__output">{Counter}</span>
           <div className="button__container">
               <button className="control__btn" onClick={increase}>+</button>
               <button className="control__btn" onClick={decrease}>-</button>
               <button className="reset" onClick={reset}>Reset</button>
           </div>
-      </div>
+      </div> */}
     </>
       )
 }
