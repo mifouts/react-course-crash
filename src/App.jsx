@@ -36,6 +36,15 @@ function App() {
       const reset = () => {
         setCart(0)
       } */
+
+      const [arr, setArr] = useState([])
+
+      function addPlus (){
+        setArr(prevArr => [...prevArr, "+"])
+      }
+      function addMinus (){
+        setArr(prevArr => [...prevArr, "-"])
+      }
   return (
     <>
       <Header />
@@ -57,6 +66,12 @@ function App() {
         paragraph="Confirm Delete?"
         buttonCancel="Cancel"
         buttonConfirm="Confirm" />}
+
+    <div>
+      <button onClick={addPlus}>+</button>
+      <button onClick={addMinus}>-</button>
+      {arr.toString()}
+    </div>
 
 
    {/*  <div>
