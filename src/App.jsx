@@ -1,14 +1,16 @@
 import './App.css';
-import Todo from './components/Todo.jsx'
-import Header from './components/Header.jsx';
-import Modal from './components/Modal.jsx';
-import React, { useState, useEffect } from 'react';
-
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import Home from './pages/Home.jsx'
 
 function App() {
 
   return (
     <>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+    </Router>
     </>
       )
 }
