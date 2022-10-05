@@ -57,6 +57,10 @@ function App() {
       function confirmModal() {
         setShowModal(false)
       }
+
+      useEffect(() => {
+        console.log('on mount');
+      }, [showModal])
   return (
     <>
       <Header />
