@@ -59,8 +59,17 @@ function App() {
       }
 
       useEffect(() => {
-        console.log('on mount');
+        console.log('ONLY on mount');
+      }, [])
+
+      useEffect(() => {
+        console.log(`on mount AND on ${showModal} change`);
       }, [showModal])
+
+      useEffect(() => {
+        console.log('EVERY render');
+      })
+      
   return (
     <>
       <Header />
