@@ -5,8 +5,8 @@ function Nav() {
         <nav>
         <Link to="/">Home</Link>
         <Link to="/users/Ronaldo">Ronaldo</Link>
-        <Link to="/Messi">Messi</Link>
-        <Link to="/br4gg">David Bragg</Link>
+        <Link to="/users/Messi">Messi</Link>
+        <Link to="/users/br4gg">David Bragg</Link>
       </nav>
     );
 }
