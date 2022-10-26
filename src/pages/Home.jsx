@@ -3,7 +3,8 @@ import axios from 'axios'
 
 function Home() {
     async function main() {
-        console.log(await axios.get("https://jsonplaceholder.typicode.com/users"))
+        const { data } = await axios.get("https://jsonplaceholder.typicode.com/users")
+        console.log(data)
         }
     useEffect(() => {
         main();
