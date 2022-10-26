@@ -13,4 +13,4 @@ function Home() {
     return <h1>{users.length > 0 && users[0].name}</h1>
 }
 
-export default Home
+export default Home;
