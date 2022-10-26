@@ -3,6 +3,7 @@ import axios from "axios";
 
 
 
+
 function Home() {
     const [users, setUsers] = useState ([])
     async function fetchUsers() {
@@ -13,7 +14,7 @@ function Home() {
     useEffect(() => {
         fetchUsers();
     }, []);
-    return <h1>{users.length > 0 && users[0].name}</h1>;
+    return <h1>{users[0]?.name}</h1>;
 }
 
 export default Home;
