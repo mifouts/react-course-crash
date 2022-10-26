@@ -14,6 +14,7 @@ function Home() {
     useEffect(() => {
         fetchUsers();
     }, []);
+    
     return <h1>{users[0]?.name}</h1>;
 }
 
