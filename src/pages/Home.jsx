@@ -23,7 +23,7 @@ function Home() {
     return (
         <div>
     {users.map((user) => (
-        <Link to={`/${user.id}`}>
+        <Link to={`/users/${user.id}`}>
         <User
         key={user.id} 
         id={user.id} 
