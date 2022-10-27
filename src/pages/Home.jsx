@@ -12,7 +12,9 @@ function Home() {
         }
 
     useEffect(() => {
-        fetchUsers();
+        setTimeout(() => {
+            fetchUsers();
+        }, 2000)
     }, []);
 
     return (
