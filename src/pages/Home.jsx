@@ -20,19 +20,23 @@ function Home() {
     }, []);
 
 
+    function renderUsers(){
+        return users.map((user) => (
+            <Link to={`/users/${user.id}`}>
+            <User
+            key={user.id} 
+            id={user.id} 
+            name={user.name} 
+            email={user.email} 
+            username={user.username} 
+            />
+            </Link>
+        )) 
+    }
+
     return (
         <div>
-    {users.length ? users.map((user) => (
-        <Link to={`/users/${user.id}`}>
-        <User
-        key={user.id} 
-        id={user.id} 
-        name={user.name} 
-        email={user.email} 
-        username={user.username} 
-        />
-        </Link>
-    )) : <h1>Loading...</h1>}
+    {users.length ? renderUsers() : <h1>Loading...</h1>}
 
     return
      
