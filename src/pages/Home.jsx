@@ -22,7 +22,7 @@ function Home() {
 
     return (
         <div>
-    {users.map((user) => (
+    {users.length ? users.map((user) => (
         <Link to={`/users/${user.id}`}>
         <User
         key={user.id} 
@@ -32,7 +32,9 @@ function Home() {
         username={user.username} 
         />
         </Link>
-    ))}
+    )) : <h1>Loading...</h1>}
+
+    return
      
     </div>
     );
