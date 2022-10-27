@@ -22,7 +22,12 @@ function Home() {
     return (
         <div>
     {users.map((user) => (
-        <User />
+        <User
+        key={user.id} 
+        id={user.id} 
+        name={user.name} 
+        email={user.email} 
+        username={user.username} />
     ))}
      
     </div>
