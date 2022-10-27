@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import User from "user.jsx"
+import User from "../components/user.jsx"
+
 
 
 
@@ -17,20 +18,13 @@ function Home() {
         }, 500)
     }, []);
 
-    const pixels = "3px"
 
     return (
         <div>
-    {users.map((user) => {
-        return (
-    <div key={user.id} style= {{border: `${pixels} solid black`}}>
-       <div>{user?.id}</div>
-       <div>{user?.name}</div>
-       <div>{user?.email}</div>
-       <div>{user?.username}</div>
-    </div>
-        );
-    })}
+    {users.map((user) => (
+        <User />
+    ))}
+     
     </div>
     );
 }
