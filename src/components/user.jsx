@@ -8,3 +8,5 @@ function User({ id, name, email, username}) {
     </div>
     );
 }
+
+export default User;
