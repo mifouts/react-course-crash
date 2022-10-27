@@ -40,7 +40,7 @@ function Home() {
 
     return (
         <div>
-    {users.length ? renderUsers() : <h1>Loading...</h1>}
+    {users.length ? renderUsers() : renderSkeletonLoading()}
 
     return
      
